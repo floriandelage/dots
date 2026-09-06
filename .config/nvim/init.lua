@@ -283,6 +283,7 @@ do
 end
 
 vim.pack.add { gh 'christoomey/vim-tmux-navigator' }
+vim.pack.add { gh 'RyanMillerC/better-vim-tmux-resizer' }
 
 -- ============================================================
 -- Telescope

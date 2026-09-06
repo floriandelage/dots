@@ -9,6 +9,10 @@
       "rev": "4ba26e41990c11620c96c0e1cff20eab65efde4a",
       "src": "https://github.com/goolord/alpha-nvim"
     },
+    "better-vim-tmux-resizer": {
+      "rev": "a791fe5b4433ac43a4dad921e94b7b5f88751048",
+      "src": "https://github.com/RyanMillerC/better-vim-tmux-resizer"
+    },
     "blink.cmp": {
       "rev": "78336bc89ee5365633bcf754d93df01678b5c08f",
       "src": "https://github.com/saghen/blink.cmp",
