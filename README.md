@@ -22,8 +22,8 @@ sudo pacman -S stow
 First, clone the repository in your $HOME directory using git
 
 ```
-$ git clone git@github.com:floriandelage/dots.git .dots
-$ cd .dots
+$ git clone git@github.com:floriandelage/dots.git ~/.dots
+$ cd ~/.dots
 ```
 
 then use GNU stow to create symlinks
