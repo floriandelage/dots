@@ -300,6 +300,9 @@ vim.keymap.set('n', '<leader>zb', '<cmd>ZkBacklinks<CR>', { desc = 'Backlinks' }
 vim.keymap.set('n', '<leader>zl', '<cmd>ZkLinks<CR>', { desc = 'Links' })
 vim.keymap.set('n', '<leader>zt', '<cmd>ZkTags<CR>', { desc = 'Tags' })
 
+vim.pack.add { gh 'MeanderingProgrammer/render-markdown.nvim' }
+require('render-markdown').setup { completions = { lsp = { enabled = true } } }
+
 -- ============================================================
 -- Telescope
 -- ============================================================
