@@ -1,5 +1,7 @@
 export PATH=$PATH:/home/florian/.local/bin
 
+export ZK_NOTEBOOK_DIR="$HOME/Notes"
+
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --highlight-line \
   --info=inline-right \
