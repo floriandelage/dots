@@ -65,6 +65,10 @@ alias ls='ls --color'
 alias ll='ls -la --color'
 alias vim='nvim'
 
+if [[ -z "$TMUX" && -z "$SSH_CONNECTION" && -o interactive ]]; then
+    tmux new-session -A -s main
+fi
+
 fastfetch
 
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/config.toml)"
