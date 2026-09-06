@@ -1,5 +1,1 @@
-.config/tmux/plugins/
-.config/hypr
-.config/mako
-.config/waybar
-.config/rofi
+tmux/.config/tmux/plugins/
