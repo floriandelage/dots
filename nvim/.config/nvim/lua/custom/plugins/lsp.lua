@@ -44,10 +44,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
 })
 
 local servers = {
+  jdtls = {},
   clangd = {},
-
   stylua = {},
-
   lua_ls = {
     on_init = function(client)
       client.server_capabilities.documentFormattingProvider = false
