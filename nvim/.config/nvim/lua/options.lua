@@ -15,6 +15,7 @@ opt.cursorline = true
 opt.signcolumn = 'yes'
 opt.showmode = false
 opt.scrolloff = 10
+opt.colorcolumn = '80'
 
 -- Editing
 opt.breakindent = false
@@ -25,7 +26,7 @@ opt.mouse = 'a'
 -- Search
 opt.ignorecase = true
 opt.smartcase = true
-opt.inccommand = 'split'
+opt.inccommand = 'nosplit'
 
 -- Splits
 opt.splitright = true
