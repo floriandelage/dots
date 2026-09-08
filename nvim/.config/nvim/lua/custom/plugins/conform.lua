@@ -18,4 +18,4 @@ require('conform').setup {
   formatters_by_ft = {},
 }
 
-vim.keymap.set({ 'n', 'v' }, '<leader>fb', function() require('conform').format { async = true } end, { desc = '[F]ormat [b]uffer' })
+vim.keymap.set({ 'n', 'v' }, '<leader>f', function() require('conform').format { async = true } end, { desc = '[F]ormat [b]uffer' })
