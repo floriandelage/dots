@@ -2,10 +2,7 @@ vim.pack.add { 'https://github.com/stevearc/conform.nvim' }
 require('conform').setup {
   notify_on_error = false,
   format_on_save = function(bufnr)
-    local enabled_filetypes = {
-      lua = true,
-      c = true,
-    }
+    local enabled_filetypes = {}
     if enabled_filetypes[vim.bo[bufnr].filetype] then
       return { timeout_ms = 500 }
     else
