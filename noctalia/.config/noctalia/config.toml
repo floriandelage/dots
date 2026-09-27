@@ -1,0 +1,333 @@
+[bar.default]
+end = [ "volume", "brightness", "network", "session" ]
+margin_ends = 600
+shadow = false
+start = [ "control-center", "workspaces", "tray" ]
+widget_spacing = 12
+
+[brightness]
+enable_ddcutil = true
+sync_all_monitors = true
+
+[calendar]
+enabled = true
+
+    [calendar.account.personal_icloud]
+    credential_source = "file"
+    name = "Personal Calender"
+    password_file = "/run/agenix/noctalia-caldav"
+    provider = "icloud"
+    type = "caldav"
+    username = "floriandlg@icloud.com"
+
+    [calendar.account.subscription]
+    name = "School"
+    server_url = "https://ade.bordeaux-inp.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=5043&projectId=1&calType=ical&firstDate=2026-08-17&lastDate=2027-08-22&displayConfigId=71"
+    type = "ics"
+
+[control_center]
+hidden_tabs = [ "power", "bluetooth" ]
+show_session_button = false
+show_shortcut_labels = false
+
+    [[control_center.shortcuts]]
+    type = "wifi"
+
+    [[control_center.shortcuts]]
+    type = "caffeine"
+
+    [[control_center.shortcuts]]
+    type = "nightlight"
+
+    [[control_center.shortcuts]]
+    type = "notification"
+
+[desktop_widgets]
+enabled = false
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = false
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 660.0
+
+[keybinds]
+down = [ "Down", "Ctrl+n" ]
+up = [ "Up", "Ctrl+p" ]
+
+[location]
+address = "Pessac, France"
+
+[lockscreen]
+blurred_desktop = true
+fingerprint = false
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [
+    "lockscreen-login-box@FALLBACK",
+    "lockscreen-login-box@DP-2",
+    "lockscreen-login-box@DP-1",
+    "lockscreen-widget-0000000000000001"
+]
+
+    [lockscreen_widgets.grid]
+    cell_size = 8
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 70.0
+    box_width = 288.0
+    cx = 960.0
+    cy = 540.0
+    output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.5
+        background_radius = 14.0
+        center_password_text = true
+        input_opacity = 0.5
+        input_radius = 5.0
+        layout = "compact"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = false
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = false
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-2"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "DP-2"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-2".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@FALLBACK"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "FALLBACK"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@FALLBACK".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 240.0
+    box_width = 560.0
+    cx = 968.0
+    cy = 300.0
+    output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background = false
+        center_text = true
+        clock_style = "digital"
+        shadow = true
+
+[nightlight]
+enabled = true
+
+[osd]
+background_opacity = 0.99999997764825821
+
+    [osd.kinds]
+    bluetooth = false
+    brightness = false
+    keyboard_backlight = false
+    media = false
+    power_profile = false
+    privacy = false
+    volume = false
+    volume_input = false
+    volume_output = false
+
+[plugins]
+enabled = [ "mellotanica/launcher-pass" ]
+
+[shell]
+clipboard_confirm_clear_history = false
+font_family = "Iosevka Aile"
+password_style = "random"
+polkit_agent = true
+popup_shadows = false
+screen_time_enabled = true
+
+    [shell.animation]
+    enabled = false
+
+    [shell.launcher]
+    categories = false
+    fetch_exchange_rates = false
+    sort_by_usage = false
+
+        [shell.launcher.providers.calculator]
+        global = false
+
+    [shell.panel]
+    session_placement = "floating"
+
+    [shell.screen_corners]
+    enabled = true
+
+    [shell.screenshot]
+    annotate = true
+    directory = "/home/florian/Pictures/Screenshots"
+
+    [shell.session]
+    grid_columns = 5
+    show_shortcuts = false
+
+        [[shell.session.actions]]
+        action = "lock"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "ampersand"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "logout"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "eacute"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "lock_and_suspend"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "quotedbl"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "reboot"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "apostrophe"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "shutdown"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "parenleft"
+        variant = "destructive"
+
+    [shell.shadow]
+    alpha = 0.0
+
+[theme]
+builtin = "Catppuccin"
+community_palette = "Monochrome"
+mode = "dark"
+pure_black_dark = true
+source = "wallpaper"
+wallpaper_scheme = "m3-rainbow"
+
+    [theme.templates]
+    builtin_ids = [ "gtk3", "gtk4", "hyprland", "kcolorscheme" ]
+    enable_community_templates = false
+
+[wallpaper]
+directory = "/home/florian/Pictures/Wallpapers"
+directory_dark = "/home/florian/Pictures/Wallpapers"
+directory_light = "/home/florian/Pictures/Wallpapers"
+
+    [wallpaper.default]
+    path = "/home/florian/Pictures/Wallpapers/red-women.jpg"
+
+    [wallpaper.last]
+    path = "/home/florian/Pictures/Wallpapers/red-women.jpg"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/florian/Pictures/Wallpapers/red-women.jpg"
+
+[weather]
+effects = false
+
+[widget.active_window]
+display = "icon_only"
+
+[widget.control-center]
+custom_image = "/home/florian/Pictures/Assets/icons8-arch-linux-96.png"
+custom_image_colorize = true
+
+[widget.network]
+show_label = false
+
+[widget.workspaces]
+active_pill_size = 3.0
+inactive_pill_size = 1.5
+pill_scale = 0.30000000000000004
+show_labels = false
