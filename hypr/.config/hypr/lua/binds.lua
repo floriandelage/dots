@@ -1,6 +1,6 @@
 local terminal = "kitty"
-local fileManager = "nautilus"
-local browser = "brave-origin"
+local fileManager = "dolphin"
+local browser = "firefox"
 
 local mainMod = "SUPER"
 local ipc = "noctalia msg "
