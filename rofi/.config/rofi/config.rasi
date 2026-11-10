@@ -1,0 +1,29 @@
+@theme "catppuccin-default"
+
+configuration {
+	modes: "drun";
+	font: "IosevkaTerm NFP 12";
+	fixed-num-lines: false;
+	drun-display-format: "{name}";
+}
+
+window {
+    width: 480px;
+}
+
+mainbox {
+    padding: 12px;
+    spacing: 8px;
+}
+
+inputbar {
+    padding: 8px 10px;
+}
+
+listview {
+    lines: 6;
+}
+
+element {
+    padding: 6px 10px;
+}
