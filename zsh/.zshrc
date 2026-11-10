@@ -44,7 +44,6 @@ zinit light zsh-users/zsh-completions
 autoload -Uz compinit && compinit
 
 zinit light Aloxaf/fzf-tab
-# zinit light jeffreytse/zsh-vi-mode
 zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma-continuum/fast-syntax-highlighting
 
