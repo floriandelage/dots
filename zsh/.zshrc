@@ -71,6 +71,8 @@ alias tk='tmux kill-session -t'
 
 alias vim='nvim'
 
+alias monstropoches='psql -U florian -d monstropoches -h localhost'
+
 # --- Tools -------------------------------------------------------------------
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
