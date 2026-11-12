@@ -14,6 +14,12 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.fillchars = { eob = ' ' }
 vim.opt.shortmess:append 'I'
+vim.opt.list = true
+vim.opt.listchars = {
+	tab = '→ ',
+	trail = '·',
+	nbsp = '␣',
+}
 
 -- Editing
 vim.opt.shiftwidth = 4
