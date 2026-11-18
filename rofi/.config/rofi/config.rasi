@@ -4,6 +4,7 @@ configuration {
 	modes: "drun";
 	font: "IosevkaTerm NFP 12";
 	fixed-num-lines: false;
+    show-icons: true;
 	drun-display-format: "{name}";
 }
 
