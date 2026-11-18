@@ -13,7 +13,7 @@ hl.bind(
 )
 hl.bind(
 	mainMod .. " + Escape",
-	hl.dsp.exec_cmd(menu .. " -show power-menu -modi power-menu:rofi-power-menu"),
+	hl.dsp.exec_cmd(menu .. " -show power-menu -modi power-menu:$HOME/.local/bin/rofi-power-menu"),
 	{ description = "Open Power Menu" }
 )
 
