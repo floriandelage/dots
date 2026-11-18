@@ -7,6 +7,7 @@ vim.pack.add {
 
 local servers = {
 	clangd = {},
+	jdtls = {},
 	lua_ls = {
 		settings = {
 			Lua = {
