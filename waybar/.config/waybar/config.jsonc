@@ -39,10 +39,9 @@
 	},
 
 	"custom/pacman": {
-		"format": "{text} ",
+		"format": "{} ",
 		"interval": 3600,
 		"exec": "checkupdates | wc -l",
-		"exic-if": "exit 0",
 		"signal": 8,
 		"tooltip": false
 	},
