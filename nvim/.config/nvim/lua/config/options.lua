@@ -1,5 +1,5 @@
 vim.g.mapleader = ' '
-vim.opt.mouse = ''
+vim.opt.mouse = 'a'
 
 -- Look & Feel
 vim.opt.number = true
